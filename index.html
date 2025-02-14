@@ -25,7 +25,7 @@
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Passion</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Collage</a></li>
+                <li><a href="#teams" class="menu-btn">Education</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -57,7 +57,11 @@
                 <div class="column right">
                     <div class="text">I'm Yogesh Patil as a Roll <span class="typing-2"></span></div>
                     <p>Hii, Welcome to my portfolio Page..</p>
-                    <a href="#">Upload Resume</a>
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+                        <a href="https://drive.google.com/file/d/17W6F4ozI3Op--d8exbZzDhaNwHRvyiTS/view?usp=drive_link" target="_blank">View My Resume</a>
+
+                    </form>                    
                 </div>
             </div>
         </div>
@@ -175,8 +179,8 @@
                 <div class="card">
                     <div class="box">
                         <img src="images/svrandhir.png" alt="">
-                        <div class="text">Graduation</div>
-                        <p>12th</p>
+                        <div class="text">12th</div>
+                        <!-- <p>12th</p> -->
                         <p>S.V.Randhir Science And Commerce Collage Shirpur, Maharastra</p>
                     </div>
                 </div>
@@ -241,7 +245,9 @@
                             <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send message</button>
+                            <!-- <form action="send-email.php" method="post"> -->
+                            <button type="submit">Send Message</button>
+                            </form>
                         </div>
                     </form>
                 </div>
